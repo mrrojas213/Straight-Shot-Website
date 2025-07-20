@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Straight Shot</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script defer>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+
+
+<body class="bg-white relative">
+
+  <!-- Section 1: Hero Section -->
+  <section class="bg-black  bg-cover bg-center bg-no-repeat text-white h-[130vh]" >
+    <div class="flex justify-between items-center p-8 ">
+      <img src="/images/newLogo.png" alt="Logo" class="w-30 h-30 sm:w-32 sm:h-32 md:w-40 md:h-40" />
+
+      <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <nav class="hidden md:flex space-x-9 text-white font-semibold text-lg">
+        <a href="/" class="hover:text-blue-800 tracking-widest">Home</a>
+        <a href="/trailers" class="hover:text-blue-800 tracking-widest">Trailers</a>
+        <a href="/pricing" class="hover:text-blue-800 tracking-widest">Pricing</a>
+        <a href="/contact" class="hover:text-blue-800 tracking-widest">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden absolute top-0 left-0 bg-black text-white p-8 space-y-4 w-full h-screen z-50">
+      <a href="/" class="block">Home</a>
+      <a href="/trailers" class="block">Trailers</a>
+      <a href="/pricing" class="block">Pricing</a>
+      <a href="/contact" class="block">Contact</a>
+    </div>
+
+    <div class="text-center mb-60">
+      <h1 class="text-2xl font-semibold"> Trailer Rentals in Kyle, TX</h1>
+    </div>
+  </section>
+
+  <!-- Section 2: About Us -->
+  <section class="bg-gray-500 text-white py-24 px-10">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-5xl font-bold mb-6">About Us:</h2>
+      <p class="text-lg leading-relaxed">
+        At Straight Shot, we’re proud to provide reliable, convenient, and affordable trailer rentals to the Kyle community and surrounding areas. Whether you're moving, hauling equipment, or tackling a weekend project, we deliver the right trailer straight to your location — saving you time and hassle. Our mission is simple: to make renting a trailer as easy and stress-free as possible. With a focus on customer satisfaction, prompt service, and top-quality equipment, we’re here to help you get the job done with confidence.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 3: Contact Us -->
+  <section class="bg-gray-200 py-20 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start bg-white rounded-2xl">
+      
+      
+      <div class="text-left">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6 ml-10 mt-10">Contact Us</h2>
+        <p class="text-lg font-semibold text-gray-800 mb-5 ml-10">979-540-7172</p>
+        <p class="text-lg font-semibold text-gray-800 mb-5 ml-10">straightshotrentals@gmail.com</p>
+        <p class="text-lg font-semibold text-gray-800 ml-10">Kyle, TX</p>
+      </div>
+
+      
+      <div class="w-full h-80 rounded-lg overflow-hidden shadow-md">
+        <iframe 
+          class="w-full h-full border-0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-97.94285774230958%2C29.963938103654602%2C-97.83247947692873%2C30.011516179766332&amp;layer=mapnik" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
+      
+    </div>
+  </section>
+  
+
+</body>
+</html>
