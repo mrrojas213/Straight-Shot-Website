@@ -4,7 +4,9 @@
   "description": "Trailer Rental Website",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:css",
     "build:css": "postcss src/css/styles.css -o public/css/styles.css",
     "watch:css": "postcss src/css/styles.css -o public/css/styles.css --watch"
   },
