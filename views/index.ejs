@@ -14,6 +14,15 @@
   </script>
 </head>
 
+<style>
+  @keyframes scroll-horizontal {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-scroll-horizontal {
+    animation: scroll-horizontal 60s linear infinite;
+  }
+</style>
 
 <body class="bg-white relative">
 
@@ -65,7 +74,36 @@
     </div>
   </section>
 
-  <!-- Section 3: Contact Us -->
+  <!-- Section 3: Image Carousel-->  
+  <section class="py-24 px-10 bg-white">
+    <div class="overflow-hidden">
+      <div class="flex w-max animate-scroll-horizontal">
+        
+        <ul class="flex [&_li]:mx-8 [&_img]:max-w-none">
+          <li><img src="/images/img1.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img2.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img3.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img4.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img6.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img7.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img8.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+        </ul>
+
+        
+        <ul class="flex [&_li]:mx-8 [&_img]:max-w-none" aria-hidden="true">
+          <li><img src="/images/img1.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img2.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img3.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img4.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img6.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img7.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+          <li><img src="/images/img8.png"  class="w-md h-48 object-cover rounded-lg" /></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Contact Us -->
   <section class="bg-red-900 py-20 px-6">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start bg-white rounded-2xl shadow-lg p-10">
 
