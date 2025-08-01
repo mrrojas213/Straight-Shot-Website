@@ -14,8 +14,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-md: 28rem;
-    --container-lg: 32rem;
     --container-5xl: 64rem;
     --container-6xl: 72rem;
     --text-lg: 1.125rem;
@@ -210,6 +208,9 @@
   .z-50 {
     z-index: 50;
   }
+  .mx-8 {
+    margin-inline: calc(var(--spacing) * 8);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -261,15 +262,15 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
+  }
   .w-full {
     width: 100%;
   }
   .w-max {
     width: -moz-max-content;
     width: max-content;
-  }
-  .w-md {
-    width: var(--container-md);
   }
   .max-w-5xl {
     max-width: var(--container-5xl);
@@ -446,16 +447,6 @@
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .\[\&_img\]\:max-w-none {
-    & img {
-      max-width: none;
-    }
-  }
-  .\[\&_li\]\:mx-8 {
-    & li {
-      margin-inline: calc(var(--spacing) * 8);
     }
   }
 }
