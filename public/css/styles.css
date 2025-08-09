@@ -231,8 +231,8 @@
   .mb-60 {
     margin-bottom: calc(var(--spacing) * 60);
   }
-  .ml-10 {
-    margin-left: calc(var(--spacing) * 10);
+  .ml-11 {
+    margin-left: calc(var(--spacing) * 11);
   }
   .ml-12 {
     margin-left: calc(var(--spacing) * 12);
