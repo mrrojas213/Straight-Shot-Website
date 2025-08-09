@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Straight Shot</title>
-  <link rel="icon" type="image/x-icon" href="/images/StraightShot.png">
+  <link rel="icon" type="image/x-icon" href="/images/straightShot.PNG">
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <script defer>
     function toggleMenu() {
       const menu = document.getElementById('mobile-menu');
       menu.classList.toggle('hidden');
+      document.body.classList.toggle('overflow:hidden');
     }
   </script>
 </head>
@@ -29,13 +31,13 @@
   <!-- Section 1: Hero Section -->
   <section class=" bg-cover bg-center bg-no-repeat text-white h-[130vh]" style="background-image: url('/images/trailerpicture.png');">
     
-    <div class="flex justify-between items-center p-6">
+    <div class="flex justify-between items-center p-6 ">
       <div>
-        <img src="/images/transparent.png" alt="Logo" style="width: 300px; height: 170px">
+        <img src="/images/transparent.png" alt="Logo" class="w-40 md:w-72 h-auto">
       </div>
       
       <div>
-      <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()">
+      <button  class="md:hidden text-red-900 focus:outline-none relative z-60" onclick="toggleMenu()">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -50,25 +52,28 @@
       </div>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden absolute top-0 left-0 bg-black text-white p-8 space-y-4 w-full h-screen z-50">
-      <a href="/" class="block">Home</a>
-      <a href="/trailers" class="block">Trailers</a>
-      <a href="/pricing" class="block">Pricing</a>
-      <a href="/contact" class="block">Contact</a>
-    </div>
-
     <div class="text-center mb-60">
       <h1 class="text-5xl font-semibold">Website Under Construction<br></h1>
       <h1 class="text-2xl font-semibold"><br>We're currently working on something great. Please check back soon!</h1>
     </div>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobile-menu" class="hidden absolute top-0 left-0 bg-white text-red-900 text-2xl p-6 space-y-8 w-full h-screen">
+      <img src="/images/transparent.png" alt="Logo" class="w-40 mb-20">
+      <a href="/" class="flex">Home</a>
+      <a href="#about" class="flex">About</a>
+      <a href="/pricing" class="flex">Pricing</a>
+      <a href="#contact" class="flex">Contact</a>
+    </div>
+
   </section>
 
   <!-- Section 2: About Us -->
-  <section class="bg-black text-white py-24 px-10" id="about">
+  <section class="bg-black text-white py-16  sm:py-24  px-6 sm:px-10" id="about">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-5xl font-bold mb-6">About Us:</h2>
-      <p class="text-lg leading-relaxed">
+      <h2 class="text-3xl sm:text-5xl font-bold mb-6">About Us:</h2>
+      <p class="text-base sm:text-lg leading-relaxed">
         At Straight Shot, we’re proud to provide reliable, convenient, and affordable trailer rentals to the Kyle community and surrounding areas. Our mission is simple: to make renting a trailer as easy and stress-free as possible. With a focus on customer satisfaction, prompt service, and top-quality equipment, we’re here to help you get the job done with confidence.
       </p>
     </div>
@@ -128,6 +133,30 @@
       
     </div>
   </section>
+
+  <section class="bg-black text-white py-8 sm:py-12">
+  <div class="max-w-5xl mx-auto grid  grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left px-4">
+    
+    <div class="sm:text-left">
+      <h2 class="text-lg sm:text-2xl font-bold">Call or text us</h2>
+      <p class="mt-5">Tel: 979-540-7172</p>
+    </div>
+
+   
+    <div class="sm:text-center">
+      <h2 class="text-lg sm:text-2xl font-bold">Email us</h2>
+      <p class="mt-5">Email: straightshotrentals@gmail.com</p>
+    </div>
+
+    <div class= "sm:text-right">
+      <h2 class="text-lg sm:text-2xl font-bold">Our Socials</h2>
+      <div class="text-center">
+        <a  href="https://www.facebook.com/straightshotrentals" class="fab fa-facebook-f text-blue-600 text-xl mt-5 sm:ml-24" ></a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>
