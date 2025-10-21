@@ -50,7 +50,7 @@ app.post('/contact', async (req, res) => {
         });
 
         await transporter.sendMail({
-            from: email,
+            from: process.env.EMAIL_USER,
             to: process.env.EMAIL_USER,
             subject: 'New Contact Form Message',
             text:  `                    First name: ${first_name}\n 
