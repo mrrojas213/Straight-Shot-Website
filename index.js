@@ -39,6 +39,7 @@ app.post('/contact', async (req, res) => {
         const newContact = new Contact({ first_name, last_name, phone, email, rental_date, reference, message });
         await newContact.save();
         console.log('New Message Saved: ', newContact);
+        res.status(201).send('Message received!');
 
         const transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -49,7 +50,7 @@ app.post('/contact', async (req, res) => {
         });
 
         await transporter.sendMail({
-            from: process.env.EMAIL_USER,
+            from: email,
             to: process.env.EMAIL_USER,
             subject: 'New Contact Form Message',
             text:  `                    First name: ${first_name}\n 
@@ -60,7 +61,7 @@ app.post('/contact', async (req, res) => {
                     Referral: ${reference}\n
                     Additional Information: ${message}`
         });
-        res.status(201).send('Message received!');
+
     } catch(error){
         console.error('Error saving message: ', error);
         res.status(500).send('Server Error');
