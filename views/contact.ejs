@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body class="bg-white text-black">
+    <section>
+      <div class="text-center">
+        <h1 class="text-5xl font-semibold">
+          Thank you for contacting us!
+        </h1>
+        <h2 class="text-2xl font-semibold mt-4">
+          Please enter your information below and we'll be in touch soon!
+        </h2>
+      </div>
+
+      <form
+        action="/contact"
+        method="POST"
+        class="space-y-4 flex justify-center"
+      >
+        <div class="text-center  lg:text-left lg:ml-28 mt-20 text-black text-5xl  lg:text-3xl  ">
+          <label for="first_name" class="block font-semibold mb-10 lg:mb-3">
+            First Name 
+          </label>
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            required
+            class="text-black bg-white w-xl border lg:text-lg rounded-lg  mb-10 lg:mb-10 lg:p-3"
+          />
+
+          <label for="last_name" class="block font-semibold mb-10 lg:mb-3">
+            Last Name
+          </label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            required
+            class="text-black bg-white w-xl border rounded-lg  p-3 mb-10 lg:mb-5 lg:text-lg "
+          />
+
+          <label for="phone" class="block font-semibold mb-10 lg:mb-3">
+            Phone Number
+          </label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            required
+            class="text-black bg-white w-xl border rounded-lg mb-10 lg:mb-5 lg:p-3 lg:text-lg "
+          />
+
+          <label for="email" class="block font-semibold mb-10 lg:mb-3">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            required
+            class="text-black bg-white w-xl border rounded-lg mb-10 lg:mb-5 lg:p-3 lg:text-lg "
+          />
+
+          <label for="rental_date" class="block font-semibold mb-10 lg:mb-3">
+            Rental Dates
+          </label>
+          <input
+            type="text"
+            id="rental_date"
+            name="rental_date"
+            required
+            class="text-black bg-white w-xl border rounded-lg mb-10 lg:mb-5 lg:p-3 lg:text-lg "
+          />
+
+          <label for="reference" class="block font-semibold mb-10 lg:mb-3">
+            How did you hear about us?
+          </label>
+          <input
+            type="text"
+            id="reference"
+            name="reference"
+            required
+            class="text-black bg-white w-xl border rounded-lg mb-10 lg:mb-5 p-7 lg:p-7 lg:text-lg "
+          />
+
+          <label for="message" class="block font-semibold mb-10 lg:mb-3">
+            Additional notes/requests
+          </label>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            required
+            class="text-black bg-white w-xl border rounded-lg mb-10 lg:mb-0  p-7 lg:p-7 lg:text-lg "
+          />
+
+          <div>
+            <button
+              type="submit"
+              class="bg-black text-white text-3xl  w-lg lg:w-auto block font-semibold rounded-lg  ml-16 lg:ml-48 mt-10 p-2"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
