@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/straightShot.PNG">
   </head>
 
   <body class="bg-white text-black">
@@ -21,6 +22,8 @@
         action="/contact"
         method="POST"
         class="space-y-4 flex justify-center"
+        onSubmit="alert('We will be in touch soon! Thank you!');"
+
       >
         <div class="text-center  lg:text-left lg:ml-28 mt-20 text-black text-5xl  lg:text-3xl  ">
           <label for="first_name" class="block font-semibold mb-10 lg:mb-3">
@@ -101,7 +104,7 @@
           <div>
             <button
               type="submit"
-              class="bg-black text-white text-3xl  w-lg lg:w-auto block font-semibold rounded-lg  ml-16 lg:ml-48 mt-10 p-2"
+              class="bg-black text-white text-3xl  w-lg lg:w-auto block font-semibold rounded-lg  ml-12 lg:ml-48 mt-10 p-2"
             >
               Submit
             </button>
